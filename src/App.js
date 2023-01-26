@@ -17,7 +17,7 @@ export default function App() {
         "https://jsonplaceholder.typicode.com/users"
       );
 
-      setUsers(response.data);
+      setUsers(response.data);z
     } catch (error) {
       console.log("Erro ao buscar usuários");
       console.log(error);
