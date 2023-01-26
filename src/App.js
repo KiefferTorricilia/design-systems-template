@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import Card from "./components/Card";
+import NewCard from "./components/NewCard";
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -27,7 +28,7 @@ export default function App() {
     <ChakraProvider>
     {users.map((user) => {
       return(
-        <Card 
+        <NewCard 
         key={user.id}
         user={user}
         />
